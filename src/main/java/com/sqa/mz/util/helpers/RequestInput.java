@@ -204,4 +204,5 @@ public class RequestInput {
 				System.out.println("you have not provided valid word " + input);
 			}
 		}
+	}
 }
