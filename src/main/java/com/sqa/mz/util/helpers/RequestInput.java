@@ -205,4 +205,17 @@ public class RequestInput {
 			}
 		}
 	}
+
+	// Get a String Welcome the user
+	public static String getWelcomeTheUser() {
+		String input, resultValue;
+		scanner = new Scanner(System.in);
+		System.out.print("Welcome to our Application! ");
+		System.out.println("Could I get your name?");
+		String userName = scanner.nextLine();
+		resultValue = "Thank you, " + userName;
+		System.out.println(resultValue);
+
+		return resultValue;
+	}
 }

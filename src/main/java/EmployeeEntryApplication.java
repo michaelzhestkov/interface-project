@@ -20,9 +20,6 @@ public class EmployeeEntryApplication {
 
 	}
 
-	/**
-	 * @param i
-	 */
 	private static void addEmployeeInfo(int i) {
 		System.out.println("Can I get Employee " + (i + 1) + "'s name:");
 		names[i] = scanner.nextLine();
@@ -37,9 +34,6 @@ public class EmployeeEntryApplication {
 
 	}
 
-	/**
-	 *
-	 */
 	private static void displayEmployees() {
 		for (int i = 0; i < names.length; i++) {
 			System.out.println("-----------------------");
@@ -53,9 +47,6 @@ public class EmployeeEntryApplication {
 
 	}
 
-	/**
-	 *
-	 */
 	private static void farwellUser() {
 		System.out.println("Thank you for using my application!");
 		scanner.close();
@@ -63,9 +54,6 @@ public class EmployeeEntryApplication {
 
 	}
 
-	/**
-	 *
-	 */
 	private static void requestUserCount() {
 		numOfEmployees = RequestInput.getInt("How many employees would you like to enter into the System?", 1, 2, 3, 4,
 				5, 6, 7, 8, 9);
@@ -76,13 +64,11 @@ public class EmployeeEntryApplication {
 		addresses = new String[numOfEmployees];
 	}
 
-	/**
-	 *
-	 */
 	private static void welcomeUser() {
-		System.out.print("Welcome to our Application! ");
-		System.out.println("Could I get your name?");
-		userName = scanner.nextLine();
+		userName = RequestInput.getWelcomeTheUser();
+		// System.out.print("Welcome to our Application! ");
+		// System.out.println("Could I get your name?");
+		// userName = scanner.nextLine();
 
 	}
 }
